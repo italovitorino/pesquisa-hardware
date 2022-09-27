@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Cadastrar Produto </h2>
+
+    <fieldset style="border:3px solid #098; width:600px;">
+        <legend style="font-weight: bolder; font-size: 18px;"> Informe os dados do produto </legend>
+            <form action="../../controller/ProdutoController.php" method="post" enctype="multipart/form-data" name="cad">
+                <label> Nome: </label>
+                <input type="text" id="nome" name="nome" required />
+                <br/> <br/>
+                <label> Marca: </label>
+                <input type="text" id="marca" name="marca" required />
+                <br/> <br/>
+                <label>Descrição</label>
+                <textarea name="descricao" id="" cols="30" rows="10"></textarea>
+                <br/> <br/>
+                <label> Categoria: </label>
+                <input type="text" id="categoria" name="categoria" required />
+                <br/> <br/>
+                <input type="submit" id="cadastrar" name="cadastrar" value="Cadastrar" />
+                <button> <a href="../../" style="text-decoration:none;"> VOLTAR </a> </button>
+        </form>
+    </fieldset>
+</body>
+</html>

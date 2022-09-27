@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #2a2a2a;
+  color: #fff;
+    overflow-x: hidden;
+
+}
+nav a:hover{
+  border-bottom: 2px solid #FF8A00 !important;
+  color: #FF8A00 !important;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: all 0.6s;
+} 
+
+
+
+header{
+  background-color: #222222;
+  width: 100%;
+  height: 14vh;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+}
+
+header > p{
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  margin: auto 0;
+}   
+
+.menu{
+  display: flex;
+  justify-content: space-around;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+}
+
+.menu li,a{
+  margin: 12px;
+  list-style: none;
+  }
+
+  
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2rem;
+  margin-top: 60px;
+}
+
+.lista {
+  width: 90%;
+  max-width: 940px;
+  margin: 2rem auto;
+  padding:40px ;
+}
+.lista-item {
+  background-color: #ff7300;
+  color: #fff ;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.lista-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.lista-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.lista-item-header.active::after {
+  content: "\2212";
+}
+.lista-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.lista-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+@media(max-width:767px) {
+  html {
+    font-size: 14px;
+  }
+}
